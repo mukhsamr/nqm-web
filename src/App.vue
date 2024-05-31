@@ -75,7 +75,8 @@ onMounted(() => {
 
     <!-- Home -->
     <section id="home" class="h-screen">
-      <div class="h-full flex items-center border-b-4 border-slate-700 bg-white">
+      <div
+        class="h-full flex items-center border-b-4 border-slate-700 bg-gradient-to-tr from-green-200/30 to-white/30 backdrop-blur-sm">
         <div class="">
           <div class="text-slate-800">
             <div class="px-12 md:px-28">
@@ -196,7 +197,7 @@ onMounted(() => {
     <!-- Galery -->
     <section id="galery" class="min-h-screen">
       <div class="bg-[url('/bg/bg.webp')] px-2 py-16 md:px-28 md:py-20 bg-slate-700">
-        <div class="text-3xl font-semibold text-center text-white" data-aos="fade-u">Galery</div>
+        <div class="text-3xl font-semibold text-center text-white" data-aos="fade-up">Galery</div>
 
         <div class="mx-auto py-2 mt-8">
           <div class="flex flex-wrap">
@@ -259,7 +260,7 @@ onMounted(() => {
         </div>
 
         <div class="mt-6 p-4 md:p-10 shadow border-4 border-slate-700 relative bg-[url('/bg/paper.webp')] bg-cover"
-          data-aos="flip-left">
+          data-aos="fade-up">
 
           <div class="mb-6 md:w-96 md:float-right md:ml-6">
             <img draggable="false" src="/bg/halaman.webp" alt="halaman"
@@ -409,7 +410,7 @@ onMounted(() => {
         </div>
 
         <div class="font-black px-4 md:px-28 py-4 text-right">
-          Copyright © 2023 nurulquranmulia.sch.id
+          Copyright © {{ new Date().getFullYear() }} nurulquranmulia.sch.id
         </div>
       </footer>
     </section>
